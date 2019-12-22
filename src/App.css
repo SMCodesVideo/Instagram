@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	paddin: 0;
+	user-select: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: #fafafa;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cellBack {
+	width: 400px;
+	height: 600px;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/IPhone_6_Plus_Space_Gray.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 270px;
+	text-align: center;
+	float: left;
+	position: relative;
+	left: 210px;
+	top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cellBack > img {
+	width: 235px;
+	margin-top: 90px;
+	border-radius: 2px;
 }
-
-.App-link {
-  color: #61dafb;
+.cellFront {
+	left: -110px;
+	width: 400px;
+	position: relative;
+	margin-top: 50px;
+	height: 600px;
+	background-image: url('iphone_white.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 348px;
+	text-align: center;
+	float: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cellFront > img {
+	height: 420px;
+	width: 245px;
+	position: relative;
+	left: 6px;
+	margin-top: 86px;
+	user-select: none;
+	border-radius: 2px;
+}
+#cells {
+	float: left;
+}
+#login {
+	float: left;
+	position: relative;
+	left: -110px;
+	width: 400px;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	padding-bottom: 20px;
+	margin-top: 100px;
+	text-align: center;
+	float: left;
+}
+#login > img {
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#formularioLogin > input {
+	transition: .4s all linear;
+	margin-bottom: 20px;
+	width: 70%;
+	background-color: #FAFAFA;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+	height: 30px;
+	padding-left: 5px;
+}
+#formularioLogin > input:focus {
+	border: 1px solid #999;
+	outline: 0;
+}
+#logar {
+	background-color: #3897f0 !important;
+	opacity: .3;
+	color: white;
+	font-weight: 700;
+	border-radius: 5px !important;
+	font-size: 16px;
+}
+#insert {
+	width: 400px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+}
+#insert > p {
+	float: left;
+	font-size: 20px;
+	color: #999;
+	font-weight: 800;
+	text-align: center;
+	position: relative;
+	left: 25px;
+}
+.barra_left {
+	margin-top: 10px;
+	padding-left: 110px;
+	margin-left: 50px;
+	float: left;
+	height: 1px;
+	background-color: #DDD;
+}
+.barra_right {
+	margin-top: 10px;
+	margin-right: 50px;
+	padding-left: 110px;
+	float: right;
+	height: 1px;
+	background-color: #DDD;
+}
+#logfacebook > img {
+	width: 32px;
+	float: left;
+	position: relative;
+	left: 25%;
+	top: -7px;
+}
+#logfacebook {
+	cursor: pointer;
+}
+#logfacebook > p {
+	color: #385185;
+	font-weight: 900;
+}
+#forgot {
+	text-decoration: none;
+	color: #003569;
+	margin-bottom: 40px;
+	font-size: 15px;
+}
+#donthave {
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	width: 400px;
+	float: left;
+	position: relative;
+	left: -110px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 15px;
+}
+#donthave > p > strong {
+	color: #3897f0;
 }
